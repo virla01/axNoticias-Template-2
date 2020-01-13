@@ -1,0 +1,817 @@
+/* -----------------------
+* COMPLEMENTOS
+-------------------------- */
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+span.textSeccion {
+    display: block;
+    width: auto;
+    position: absolute;
+    color: #ffffff;
+    padding: 0px 1rem;
+}
+
+.linea-separador {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(236, 197, 83, 0.8);
+    margin: 1rem 0px;
+}
+
+.politica {
+    background-color: #2196F3;
+}
+
+.line-politica {
+    border-top: 4px solid #0c7cd5;
+}
+
+.mundo {
+    background-color: #999966;
+}
+
+.line-mundo {
+    border-top: 4px solid #7a7a52;
+}
+
+.economia {
+    background-color: #75b036;
+}
+
+.line-economia {
+    border-top: 4px solid #5b892a;
+}
+
+.sociedad {
+    background-color: #f81208;
+}
+
+.line-sociedad {
+    border-top: 4px solid #c60e06;
+}
+
+.deporte {
+    background-color: #33ccff;
+}
+
+.line-deporte {
+    border-top: 4px solid #0dc2ff;
+}
+
+.vidriera {
+    background-color: #ffb84d;
+}
+
+.line-vidriera {
+    border-top: 4px solid #ffa31a;
+}
+
+.tecno {
+    background-color: #bfbfbf;
+}
+
+.line-tecno {
+    border-top: 4px solid #a6a6a6;
+}
+
+.fondoPolitica {
+    background-color: #D03632;
+}
+
+.textPolitica {
+    color: #D03632;
+}
+
+span.lineaPolitica::before {
+    background: #D03632 !important;
+}
+
+.fondoMundo {
+    background-color: #26B2EC;
+}
+
+.textMundo {
+    color: #26B2EC;
+}
+
+span.lineaMundo::before {
+    background: #26B2EC !important;
+}
+
+.fondoEconomia {
+    background-color: #64C568;
+}
+
+.textEconomia {
+    color: #64C568;
+}
+
+span.lineaEconomia::before {
+    background: #64C568 !important;
+}
+
+.fondoSociedad {
+    background-color: #FDA400;
+}
+
+.textSociedad {
+    color: #FDA400;
+}
+
+span.lineaSociedad::before {
+    background: #FDA400 !important;
+}
+
+.fondoVidriera {
+    background-color: #9A30D8;
+}
+
+.textVidriera {
+    color: #9A30D8;
+}
+
+span.lineaVidriera::before {
+    background: #9a30d8 !important;
+}
+
+.fondoDeportes {
+    background-color: #339933;
+}
+
+.textDeportes {
+    color: #339933;
+}
+
+span.lineaDeportes::before {
+    background: #339933 !important;
+}
+
+.fondoTecno {
+    background-color: #0066cc;
+}
+
+.textTecno {
+    color: #0066cc;
+}
+
+span.lineaTecno::before {
+    background: #0066cc !important;
+}
+
+.fondoTurismo {
+    background-color: #ff99cc;
+}
+
+.textTurismo {
+    color: #ff99cc;
+}
+
+span.lineaTurismo::before {
+    background: #ff99cc !important;
+}
+
+a.facebook {
+    color: #0561AF;
+}
+
+a.twitter {
+    color: #00BFF3;
+}
+
+a.youtube {
+    color: #CC181E;
+}
+
+a.linkedin {
+    color: #0077B5;
+}
+
+a.pinterest {
+    color: #BD081C;
+}
+
+a.instagram {
+    color: #CD486B;
+}
+
+a.whatsapp {
+    color: #65D64A;
+}
+
+
+/* -----------------------
+* CONTENEDOR GRID
+-------------------------- */
+
+.contenedorGrid {
+    display: grid;
+    grid-row-gap: 1.25rem;
+    grid-template-columns: 1fr 25%;
+    grid-template-rows: 214px auto 520px;
+    grid-template-areas: "header header" "main aside" "footer footer";
+}
+
+
+/* -----------------------
+* HEADER
+-------------------------- */
+
+.header {
+    grid-area: header;
+}
+
+
+/*
+Header-top
+----------------------- */
+
+.header-top {
+    display: flex;
+    height: 2.5rem;
+    background-color: #2B2C30;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+
+.header-top>.fecha {
+    display: inline-flex;
+    width: auto;
+    font-size: 0.875rem;
+    color: #f2f2f2;
+}
+
+.header-top>.lista_IconSocial {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.header-top>.lista_IconSocial>.item-IconoSocial {
+    display: inline-flex;
+    width: auto;
+}
+
+.header-top>.lista_IconSocial>.item-IconoSocial>a {
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.header-top>.lista_IconSocial>.item-IconoSocial>a.facebook:hover,
+.header-top>.lista_IconSocial>.item-IconoSocial>a.twitter:hover,
+.header-top>.lista_IconSocial>.item-IconoSocial>a.youtube:hover,
+.header-top>.lista_IconSocial>.item-IconoSocial>a.instagram:hover,
+.header-top>.lista_IconSocial>.item-IconoSocial>a.whatsapp:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/*
+Header-middle
+----------------------- */
+
+.header-middle {
+    display: inline-flex;
+    width: 100%;
+    height: 8.125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-middle>.header-middle_logo {
+    text-align: center;
+}
+
+.header-middle>.header-middle_logo>.logo img {
+    display: block;
+    width: 320px;
+}
+
+.header-middle>.header-middle_logo>.tagline {
+    display: block;
+    width: 100%;
+    font-family: lato;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(42, 42, 42, 0.7);
+    margin: 0;
+}
+
+
+/*
+Header-bottom
+----------------------- */
+
+.header-bottom {
+    position: relative;
+    height: 2.75rem;
+    background-color: #2B2C30;
+}
+
+.header-bottom>#btn-menu {
+    display: none;
+}
+
+.header-bottom>label {
+    display: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin: .5rem 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-bottom>.header-bottom_lista {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+
+.header-bottom>.header-bottom_lista>.header-bottom_item {
+    display: inline-flex;
+    font-size: 14px;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0.58rem 1rem;
+    border-top: 4px solid transparent;
+    cursor: pointer;
+}
+
+.header-bottom>.header-bottom_lista>.header-bottom_item a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.header-bottom>.header-bottom_lista>.header-bottom_item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f2f2f2;
+    border-top: 4px solid transparent;
+    margin: 0;
+    padding: 0.58rem 1rem;
+}
+
+.header-bottom>.header-bottom_lista>.header-bottom_item.active {
+    background-color: #ffffff;
+    color: #090909;
+    border-top: 4px solid #4DB2EC;
+    margin: 0;
+    padding: 0.58rem 1rem;
+}
+
+.header-bottom>.header-bottom_lista>.header-bottom_item.active a {
+    color: #090909;
+}
+
+
+/* -----------------------
+* MAIN
+-------------------------- */
+
+.main {
+    grid-area: main;
+}
+
+.main .container {
+    padding: 0;
+}
+
+
+/*
+Post Columna
+----------------------- */
+
+.postColum_title {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.postColum_title>h4.title {
+    margin-top: 1rem;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.postColum_title a {
+    color: #2a2a2a;
+}
+
+.postColum_title a:hover {
+    text-decoration: none;
+    color: #CB4854;
+}
+
+.postColum_title>span.textSeccion {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+    padding: .25rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.article01,
+.article02,
+.article03,
+.article04 {
+    position: relative;
+    min-height: 120px;
+    margin-bottom: 1rem;
+}
+
+.article01 {
+    margin-top: 0;
+}
+
+.tituloCopete {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 1rem;
+    bottom: 1px;
+}
+
+h1.title_article01 a {
+    display: block;
+    font-size: 1.875rem;
+    line-height: 34px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+h1.title_article01 a:hover,
+h2.title_article02 a:hover,
+h3.title_article03 a:hover,
+h3.title_article05 a:hover,
+h3.title_article06 a:hover {
+    text-decoration: none;
+}
+
+h1.title_article01 a:hover,
+h2.title_article02 a:hover,
+h3.title_article05 a:hover,
+h3.title_article06 a:hover {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.copete_article {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+h2.title_article02 a {
+    display: block;
+    font-size: 1.625rem;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h3.title_article03 a {
+    display: block;
+    position: absolute;
+    font-size: 1.25rem;
+    line-height: 22px;
+    font-weight: 700;
+    color: #2A2A2A;
+    top: 40px;
+}
+
+h3.title_article03 a:hover {
+    color: #CB4854;
+}
+
+.article04 {
+    margin-bottom: 0;
+}
+
+figure.line-politica,
+figure.line-mundo,
+figure.line-economia {
+    margin: 0;
+}
+
+.article04-2,
+.article05,
+.article06 {
+    display: block;
+    position: relative;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+}
+
+.article05,
+.article06 {
+    margin-bottom: 0;
+}
+
+span.titleSeccion {
+    display: block;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+    padding-bottom: 0.3125rem;
+}
+
+h3.title_article04-2 a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.article04-2 .img_article04-2 {
+    width: 35%;
+    height: auto;
+    margin: 1rem 0 0 1rem;
+    float: right;
+}
+
+h3.title_article05 a,
+h3.title_article06 a {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+/* -----------------------
+* BANNERS
+-------------------------- */
+
+.bannerOneHorizontal {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0px;
+    border-top: 1px solid rgba(236, 197, 83, 0.8);
+    border-bottom: 1px solid rgba(236, 197, 83, 0.8);
+}
+
+
+/* -----------------------
+* ASIDE
+-------------------------- */
+
+.aside {
+    grid-area: aside;
+    padding-left: 1.875rem;
+}
+
+aside>.titleSeccion {
+    font-size: 1.0625rem;
+    padding: 0 0 0.625rem;
+    border-bottom: 1px solid rgba(236, 197, 83, 0.8);
+    margin-bottom: 1.25rem;
+}
+
+.masLeidas {
+    display: block;
+    width: 100%;
+}
+
+.weather-widget {
+    background: #08f;
+    color: #fff;
+    border-width: 0;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.widget-title {
+    font-size: 1.0625rem;
+    color: #ffffff;
+}
+
+.weather-wrap {
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 0 20px;
+    line-height: 1;
+}
+
+.weather-icon-and-city {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.weather-icon {
+    font-family: 'tiefonticon';
+    position: relative;
+    margin: 0 auto 0.1em;
+    font-size: 75px;
+    width: 1em;
+    height: 0.9em;
+}
+
+.weather-name {
+    font-size: 32px;
+    padding-top: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.weather-desc {
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.weather-todays-stats {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.weather-current-temp {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.weather-current-temp sup {
+    font-size: 17px;
+    vertical-align: super;
+    font-weight: normal;
+}
+
+.weather-more-todays-stats {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 90%;
+}
+
+.weather-forecast {
+    clear: both;
+    padding-top: 0.625rem;
+    overflow: hidden;
+}
+
+.weather-forecast-day {
+    position: relative;
+    width: 1%;
+    display: table-cell;
+    text-align: center;
+}
+
+.weather-forecast-day .weather-icon {
+    font-size: 35px;
+}
+
+.weather-forecast-day-temp {
+    font-size: 14px;
+}
+
+.weather-forecast-day-abbr {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 3px;
+    line-height: 1.4;
+}
+
+.item-post {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.post-number {
+    float: left;
+    background: #FA824F;
+    border-radius: 1px 1px 1px 1px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 36px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.title-item-post a {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 18px;
+    font-weight: 600;
+    color: #2a2a2a;
+}
+
+
+/* -----------------------
+* FOOTER
+-------------------------- */
+
+.footer {
+    grid-area: footer;
+    background-color: #2B2C30;
+}
+
+.content-footer {
+    display: block;
+    margin-top: 1.875rem;
+}
+
+.content-footer_row01 {
+    display: block;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(236, 197, 83, 0.3);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.logoChico_Footer {
+    width: 250px;
+    margin: 0 auto 1.25rem auto;
+}
+
+.logoChico_Footer img {
+    display: block;
+    width: 250px;
+}
+
+.content-footer_row01>p {
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    margin-bottom: 0px;
+}
+
+.content-footer_row02 {
+    padding: 0px 3.125rem;
+}
+
+.content-footer_row03 {
+    margin-bottom: 2rem;
+}
+
+.footer-ins {
+    font-family: 'Lato', sans-serif;
+    border-top: 1px solid rgba(236, 197, 83, 0.3);
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    clear: both;
+    color: #6f7074;
+}
+
+span.textoFooterAspecto {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #C9CACC;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+span.textoFooterX {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #CB4854;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+footer h5 {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+footer p,
+footer p a {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: .5rem;
+}
+
+
+/* -----------------------
+* MEDIA
+-------------------------- */
